@@ -5,6 +5,7 @@ import type { Locale } from "@/config/site";
 import { getDictionary } from "@/lib/i18n";
 import { paths } from "@/lib/paths";
 import { MainNav } from "./MainNav";
+import { MobileNav } from "./MobileNav";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { StickyHeader } from "./StickyHeader";
 
@@ -17,8 +18,8 @@ export function Header({ locale }: Props) {
       <div className="mx-auto flex min-w-0 max-w-6xl items-center gap-2 px-4 py-3 sm:gap-4 sm:px-6 sm:py-3.5">
         <Link
           href={paths.home(locale)}
-            className="group flex shrink-0 items-center gap-2.5 sm:gap-3"
-          >
+          className="group flex min-w-0 shrink-0 items-center gap-2.5 sm:gap-3"
+        >
             <span
             className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl border border-slate-200/90 bg-white shadow-sm ring-1 ring-slate-900/5 transition group-hover:ring-brand-400/25 sm:h-10 sm:w-10"
             aria-hidden
@@ -37,9 +38,12 @@ export function Header({ locale }: Props) {
             {SITE_NAME}
           </span>
         </Link>
-        <MainNav locale={locale} nav={d.nav} />
-        <div className="shrink-0">
+        <div className="hidden min-w-0 flex-1 md:flex md:justify-center">
+          <MainNav locale={locale} nav={d.nav} />
+        </div>
+        <div className="ml-auto flex shrink-0 items-center gap-1.5 sm:gap-2 md:ml-0">
           <LanguageSwitcher locale={locale} />
+          <MobileNav locale={locale} nav={d.nav} />
         </div>
       </div>
     </StickyHeader>

@@ -3,37 +3,27 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Locale } from "@/config/site";
-import { paths } from "@/lib/paths";
 import { isNavItemActive } from "@/lib/nav-active";
+import { navRouteKeys, type NavLabels } from "@/lib/nav-routes";
 import { cn } from "@/lib/cn";
-
-const keys = [
-  { k: "home" as const, href: (l: Locale) => paths.home(l) },
-  { k: "products" as const, href: (l: Locale) => paths.products(l) },
-  { k: "about" as const, href: (l: Locale) => paths.about(l) },
-  { k: "contact" as const, href: (l: Locale) => paths.contact(l) },
-];
-
-type Nav = {
-  home: string;
-  products: string;
-  about: string;
-  contact: string;
-};
 
 type Props = {
   locale: Locale;
-  nav: Nav;
+  nav: NavLabels;
+  className?: string;
 };
 
-export function MainNav({ locale, nav }: Props) {
+export function MainNav({ locale, nav, className }: Props) {
   const pathname = usePathname() || `/${locale}`;
   return (
     <nav
-      className="no-scrollbar flex min-h-0 min-w-0 flex-1 flex-nowrap items-center justify-center gap-0.5 overflow-x-auto sm:gap-0 md:gap-1 lg:gap-2"
+      className={cn(
+        "no-scrollbar flex min-h-0 min-w-0 flex-1 flex-nowrap items-center justify-center gap-0.5 overflow-x-auto sm:gap-0 md:gap-1 lg:gap-2",
+        className,
+      )}
       aria-label="Primary"
     >
-      {keys.map(({ k, href }) => {
+      {navRouteKeys.map(({ k, href }) => {
         const active = isNavItemActive(pathname, locale, k);
         const to = href(locale);
         return (

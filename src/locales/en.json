@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "whatsappCta": "WhatsApp"
+  },
+  "header": {
+    "tagline": "Trade"
+  },
+  "topbar": {
+    "phoneAria": "Phone",
+    "emailAria": "Send e-mail"
+  },
+  "hero": {
+    "eyebrow": "B2B SUPPLY",
+    "title": "Reliable Supply with 25 Years of Experience",
+    "titleLine1": "25 Years of Experience",
+    "titleLine2": "Reliable B2B Supply",
+    "sub": "We serve enterprise customers with industrial supply, safety consumables, and contract-driven fulfilment. Transparent operations, measurable service, and long-term partnership are what we build every day.",
+    "ctaQuote": "Get a Quote",
+    "ctaProducts": "Browse Products",
+    "badge1": "25+ years’ experience",
+    "badge2": "Responsive supply",
+    "badge3": "Trusted B2B partner"
+  },
+  "stats": {
+    "s1": "25+",
+    "l1": "Years in business",
+    "s2": "500+",
+    "l2": "Business clients",
+    "s3": "7/24",
+    "l3": "Rapid support"
+  },
+  "about": {
+    "title": "About",
+    "intro": "Since 1999, we have been offering consistent quality, a reliable supply chain, and flexible solutions. We continue to expand into razors, building materials, and new categories. Today, we are especially strong in gloves and PPE supply.",
+    "highlights": {
+      "trust": { "title": "Reliable Supply", "text": "Approved suppliers and process discipline you can count on." },
+      "fast": { "title": "Fast Delivery", "text": "Planned stock and shipping for predictable lead times." },
+      "quality": { "title": "Quality Products", "text": "Selected brands and standards-oriented assortment." }
+    }
+  },
+  "categories": {
+    "title": "Product Categories",
+    "subtitle": "Browse by category. More categories coming soon.",
+    "gloves": { "name": "Gloves", "desc": "Nitrile, latex, cut-resistant, and industrial work gloves." }
+  },
+  "featured": { "title": "Featured Products", "viewDetail": "Details" },
+  "satisfaction": {
+    "title": "Customer satisfaction",
+    "text": "Customer satisfaction is at the center of our business. We collect feedback, feed it into our operations, and act quickly on fixes. With regular review and open communication, we keep satisfaction trending upward and renew trust for long-term B2B partnerships, order after order.",
+    "items": {
+      "feedback": { "title": "Feedback & follow-up", "text": "Fast response to your requests, plus action plans to improve recurring pain points." },
+      "clear": { "title": "Clear communication", "text": "Predictable, transparent information across ordering and delivery milestones." },
+      "improve": { "title": "Continuous improvement", "text": "We raise the bar with training, supplier quality reviews, and periodic target tracking." }
+    }
+  },
+  "reviews": {
+    "title": "Customer reviews",
+    "subtitle": "Short notes from companies we’ve worked with since 1999. (Sample testimonials)"
+  },
+  "form": {
+    "title": "Quote / Order Request",
+    "name": "Full name",
+    "phone": "Phone",
+    "product": "Product",
+    "productPlaceholder": "Product name or category",
+    "message": "Message",
+    "submit": "Send request"
+  },
+  "footer": {
+    "line": "A trusted B2B partner in supply, safety, and consumables for 25 years.",
+    "address": "Istanbul, Turkey",
+    "quickLinks": "Quick links",
+    "contactCol": "Contact"
+  },
+  "pages": {
+    "products": { "title": "Products" },
+    "productDetail": { "back": "Back to category" },
+    "about": {
+      "title": "About us",
+      "p1": "Mavi Yapı has served enterprise customers for over 25 years with supply and supply-chain solutions. Transparency, on-time shipment, and long-term partnerships are our focus.",
+      "p2": "We started with PPE and gloves, and we use the same scale and professionalism to add new categories (e.g. razors, building materials).",
+      "p3": "For orders, quotes, and technical questions, use the form or our WhatsApp line."
+    },
+    "contact": {
+      "title": "Contact",
+      "p": "Use the form below or WhatsApp. We usually reply quickly."
+    }
+  }
+}

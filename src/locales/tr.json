@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "whatsappCta": "WhatsApp"
+  },
+  "header": {
+    "tagline": "Ticaret"
+  },
+  "topbar": {
+    "phoneAria": "Telefonu göster",
+    "emailAria": "E-posta gönder"
+  },
+  "hero": {
+    "eyebrow": "B2B TEDARİK",
+    "title": "25 Yıllık Tecrübe ile Güvenilir Tedarik",
+    "titleLine1": "25 Yıllık Deneyimle",
+    "titleLine2": "Güvenilir Tedarik",
+    "sub": "Kurumsal müşterilere endüstriyel tedarik, iş güvenliği tüketimi ve sözleşmeye uyumlu sevkiyat sağlıyoruz. Şeffaf süreç, ölçülebilir hizmet ve uzun vadeli iş ortaklıkları odağımızdadır.",
+    "ctaQuote": "Teklif Al",
+    "ctaProducts": "Ürünleri İncele",
+    "badge1": "25+ yıllık deneyim",
+    "badge2": "Hızlı tedarik",
+    "badge3": "Güvenilir iş ortağı"
+  },
+  "stats": {
+    "s1": "25+",
+    "l1": "Yıl tecrübe",
+    "s2": "500+",
+    "l2": "Kurumsal müşteri",
+    "s3": "7/24",
+    "l3": "Hızlı destek"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "intro": "1999’dan bu yana sektörde edindiğimiz 25 yıllık deneyimle, üretim ve hizmet ortaklarımıza tutarlı kalite, güvenilir tedarik zinciri ve ihtiyaca özel çözümler sunuyoruz. Gelecekte tıraş ürünleri, yapı malzemeleri ve farklı kategorilerle ürün gamımızı genişletmeye devam ediyoruz; bugün itibarıyla eldiven ve kişisel koruyucu donanım kategorisinde öncelikle güçlü bir tedarik kapasitesi sağlıyoruz.",
+    "highlights": {
+      "trust": { "title": "Güvenilir Tedarik", "text": "Onaylı tedarikçi ağı ve sözleşmeye sadık süreç yönetimi." },
+      "fast": { "title": "Hızlı Teslimat", "text": "Stok ve sevkiyat planlamasıyla hızlı ve planlı teslimat." },
+      "quality": { "title": "Kaliteli Ürün", "text": "Seçili markalar ve standartlara uyumlu ürün gamı." }
+    }
+  },
+  "categories": {
+    "title": "Ürün Kategorileri",
+    "subtitle": "İhtiyacınıza göre kategorilere göz atın. Yeni kategoriler yakında eklenecek.",
+    "gloves": { "name": "Eldivenler", "desc": "Nitril, lateks, kesilmeye dayanıklı ve endüstriyel iş eldivenleri." }
+  },
+  "featured": { "title": "Öne Çıkan Ürünler", "viewDetail": "Detay" },
+  "satisfaction": {
+    "title": "Müşteri memnuniyeti",
+    "text": "Müşteri memnuniyetimiz işimizin merkezindedir. Geri bildirimleri dikkatle toplar, operasyonel süreçlerimize taşır ve hızlı düzeltici aksiyonlar alırız. Düzenli değerlendirme ve açık iletişim sayesinde memnuniyeti sürekli artırmaya odaklanıyor; uzun vadeli ortaklıklar için güveni her siparişte tazeliyoruz.",
+    "items": {
+      "feedback": { "title": "Geri bildirim & takip", "text": "Taleplerinize hızlı yanıt ve tekrar eden noktaları iyileştirme planları." },
+      "clear": { "title": "Şeffaf iletişim", "text": "Sipariş ve sevkiyat adımlarında net, öngörülebilir bilgi paylaşımı." },
+      "improve": { "title": "Sürekli gelişim", "text": "Ekip eğitimi, tedarikçi kalite gündemi ve periyodik hedef takibiyle standardı yükseltiyoruz." }
+    }
+  },
+  "reviews": {
+    "title": "Müşteri yorumları",
+    "subtitle": "1999’dan bu yana iş birlikteliğimizi sürdüren kurum ve firmalardan kısa notlar. (örnek yorumlar)"
+  },
+  "form": {
+    "title": "Teklif / Sipariş Talebi",
+    "name": "Ad Soyad",
+    "phone": "Telefon",
+    "product": "Ürün",
+    "productPlaceholder": "Ürün adı veya kategori",
+    "message": "Mesaj",
+    "submit": "Teklif Gönder"
+  },
+  "footer": {
+    "line": "B2B tedarik, iş güvenliği ve tüketim malzemelerinde 25 yıllık güvenilir partner.",
+    "address": "İstanbul, Türkiye",
+    "quickLinks": "Hızlı bağlantılar",
+    "contactCol": "İletişim"
+  },
+  "pages": {
+    "products": { "title": "Ürünler" },
+    "productDetail": { "back": "Kategoriye dön" },
+    "about": {
+      "title": "Hakkımızda",
+      "p1": "Mavi Yapı, 25 yılı aşkın tecrübesiyle kurumsal müşterilere tedarik ve tedarik zinciri çözümleri sunmaktadır. Şeffaflık, zamanında sevkiyat ve uzun soluklu iş ortaklıkları odağımızdadır.",
+      "p2": "İş güvenliği ekipmanları (öncelikle eldivenler) ile yola çıktık; aynı yapı, ölçek ve profesyonellikle yeni ürün kategorilerini (ör. tıraş ürünleri, yapı malzemeleri) portföye ekleme planını sürdürüyoruz.",
+      "p3": "Sipariş, teklif ve teknik sorularınız için iletişim formunu veya WhatsApp hattımızı kullanabilirsiniz."
+    },
+    "contact": {
+      "title": "İletişim",
+      "p": "Aşağıdaki formu doldurarak veya WhatsApp üzerinden bize ulaşın; kısa sürede dönüş yapıyoruz."
+    }
+  }
+}

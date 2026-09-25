@@ -21,7 +21,7 @@ export function StickyHeader({ children, className }: Props) {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 border-b transition-[background,box-shadow,border-color] duration-300",
+        "sticky top-8 z-50 border-b transition-[background,box-shadow,border-color] duration-300",
         elevated
           ? "border-brand-100/80 bg-white/85 shadow-[0_4px_24px_-4px_rgba(234,88,12,0.12)] supports-[backdrop-filter]:bg-white/75 supports-[backdrop-filter]:backdrop-blur-xl"
           : "border-brand-100/40 bg-white/95 supports-[backdrop-filter]:backdrop-blur-md",

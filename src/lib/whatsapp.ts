@@ -1,12 +1,8 @@
-import { WHATSAPP_PHONE } from "@/config/site";
+import { MK_WHATSAPP_PHONE } from "@/config/site";
 
-const WA_BASE = `https://wa.me/${WHATSAPP_PHONE}`;
+const INTRO = "Merhaba MK Digital Systems, Mavi Yapı demo sitesini inceledim.";
 
-function encode(s: string) {
-  return encodeURIComponent(s);
-}
-
-export function openWhatsAppUrl(text?: string) {
-  if (!text?.trim()) return WA_BASE;
-  return `${WA_BASE}?text=${encode(text)}`;
+/** WhatsApp link to MK Digital Systems with a prefilled message that names this demo. */
+export function mkWhatsAppUrl(request = "İşletmem için benzer bir kurumsal web sitesi hakkında görüşmek istiyorum.") {
+  return `https://wa.me/${MK_WHATSAPP_PHONE}?text=${encodeURIComponent(`${INTRO} ${request}`)}`;
 }

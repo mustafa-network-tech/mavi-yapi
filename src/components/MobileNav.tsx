@@ -62,7 +62,7 @@ export function MobileNav({ locale, nav }: Props) {
       ? createPortal(
           <>
             <div
-              className="fixed bottom-0 left-0 right-0 top-16 z-[100] bg-slate-900/40 md:hidden"
+              className="fixed bottom-0 left-0 right-0 top-24 z-[100] bg-slate-900/40 md:hidden"
               onClick={close}
               aria-hidden
             />
@@ -71,7 +71,7 @@ export function MobileNav({ locale, nav }: Props) {
               role="dialog"
               aria-modal="true"
               aria-label={locale === "tr" ? "Ana menü" : "Main menu"}
-              className="fixed bottom-0 right-0 top-16 z-[110] w-1/2 min-w-0 overflow-y-auto border-l border-brand-100/80 bg-white py-1 shadow-[-6px_0_24px_-4px_rgba(0,0,0,0.12)] md:hidden"
+              className="fixed bottom-0 right-0 top-24 z-[110] w-1/2 min-w-0 overflow-y-auto border-l border-brand-100/80 bg-white py-1 shadow-[-6px_0_24px_-4px_rgba(0,0,0,0.12)] md:hidden"
             >
               <nav aria-label="Primary">
                 <ul className="min-w-0 py-1">

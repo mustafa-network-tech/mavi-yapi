@@ -4,7 +4,7 @@ import { useMemo, useState, FormEvent } from "react";
 import { getProductSelectOptions } from "@/data/products";
 import type { Locale } from "@/config/site";
 import { getDictionary } from "@/lib/i18n";
-import { openWhatsAppUrl } from "@/lib/whatsapp";
+import { mkWhatsAppUrl } from "@/lib/whatsapp";
 import { cn } from "@/lib/cn";
 import { SectionHeader } from "./SectionHeader";
 
@@ -20,18 +20,12 @@ export function OrderForm({ locale, className, id = "teklif" }: Props) {
   const [phone, setPhone] = useState("");
   const [productId, setProductId] = useState<string>("");
   const [message, setMessage] = useState("");
+  const [demoSent, setDemoSent] = useState(false);
 
+  // Demo: the form validates and completes like a real one, but nothing is sent or stored.
   function onSubmit(e: FormEvent) {
     e.preventDefault();
-    const productLabel =
-      options.find((o) => o.value === productId)?.label || productId || d.form.productPlaceholder;
-    const text =
-      locale === "tr"
-        ? `Merhaba, ${name || "—"}, ${productLabel} hakkında bilgi almak istiyorum. ${message ? `Not: ${message}` : ""} Tel: ${phone || "—"}.`
-        : `Hello, I’m ${name || "—"} and I’d like information about ${productLabel}. ${message ? `Note: ${message} ` : ""}Phone: ${phone || "—"}.`;
-    if (typeof window !== "undefined") {
-      window.location.assign(openWhatsAppUrl(text));
-    }
+    setDemoSent(true);
   }
 
   return (
@@ -48,8 +42,8 @@ export function OrderForm({ locale, className, id = "teklif" }: Props) {
         />
         <p className="mt-2 text-center text-sm text-slate-500 sm:text-left">
           {locale === "tr"
-            ? "Formu doldurduktan sonra WhatsApp üzerinden açılacak pencereye yönlendirilirsiniz."
-            : "You’ll be taken to WhatsApp to send your request."}
+            ? "Demo teklif akışı: formu deneyebilirsiniz, ancak talebiniz hiçbir yere gönderilmez."
+            : "Demo quote flow: you can try the form, but your request is not sent anywhere."}
         </p>
         <form
           onSubmit={onSubmit}
@@ -125,6 +119,26 @@ export function OrderForm({ locale, className, id = "teklif" }: Props) {
           >
             {d.form.submit}
           </button>
+          {demoSent && (
+            <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm" role="status">
+              <p className="font-semibold text-emerald-900">
+                {locale === "tr" ? "Bu bir örnek proje formudur." : "This is a sample project form."}
+              </p>
+              <p className="mt-1 text-emerald-800">
+                {locale === "tr"
+                  ? "Teklif talebi oluşturulmadı ve bilgileriniz gönderilmedi. İşletmeniz için benzer bir ürün katalogu ve teklif sistemi hakkında MK Digital Systems ile görüşebilirsiniz."
+                  : "No quote request was created and your details were not sent. Talk to MK Digital Systems about a similar catalogue and quote system for your business."}
+              </p>
+              <a
+                href={mkWhatsAppUrl("İşletmem için benzer bir ürün katalogu ve teklif sistemi hakkında görüşmek istiyorum.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center rounded-lg bg-[#25D366] px-4 py-2 font-semibold text-white hover:bg-[#20BD5A]"
+              >
+                {locale === "tr" ? "WhatsApp’tan MK Digital Systems ile görüşün" : "Talk to MK Digital Systems on WhatsApp"}
+              </a>
+            </div>
+          )}
         </form>
       </div>
     </section>

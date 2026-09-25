@@ -1,4 +1,4 @@
-import { openWhatsAppUrl } from "@/lib/whatsapp";
+import { mkWhatsAppUrl } from "@/lib/whatsapp";
 import { cn } from "@/lib/cn";
 
 type Props = { "aria-label": string; className?: string };
@@ -6,7 +6,7 @@ type Props = { "aria-label": string; className?: string };
 export function WhatsAppFloat({ "aria-label": label, className }: Props) {
   return (
     <a
-      href={openWhatsAppUrl()}
+      href={mkWhatsAppUrl()}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}

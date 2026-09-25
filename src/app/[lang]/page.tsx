@@ -16,14 +16,11 @@ type Args = { params: Promise<{ lang: string }> };
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { lang } = await params;
   const l: Locale = isLocale(lang) ? lang : defaultLocale;
-  const d = getDictionary(l);
+  // The layout's title template does not reach this same-segment page, so the demo title is set here;
+  // description and Open Graph come from the layout.
+  const kind = l === "tr" ? "Kurumsal Tedarik Web Sitesi Demosu" : "B2B Supply Website Demo";
   return {
-    title: l === "tr" ? "Ana Sayfa" : "Home",
-    description: d.hero.sub,
-    openGraph: {
-      title: `${d.hero.title} | ${SITE_NAME}`,
-      description: d.hero.sub,
-    },
+    title: { absolute: `${SITE_NAME} — ${kind} | MK Digital Systems` },
   };
 }
 
